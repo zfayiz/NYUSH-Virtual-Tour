@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>NYUSH Virtual - Library</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/valiant360.css" />
+
+		
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		
+	</head>
+	<body class= "landing" onload="enableAutoplay()">
+		<audio loop id="myAudio">
+  <source src="librarysound.mp3" type="audio/mp3">
+ 
+</audio>
+
+		<!-- Header -->
+			<header id="header">
+				<div id="parent" style="margin:auto; text-align:center;">
+<a href="http://shanghai.nyu.edu/"> <img class= "logo" src="logo.png" style="width:70px; height:80px; display: block; margin-top: 10px; margin-left: auto; margin-right: auto;"></img></a>
+<div id="popup3" style="display: none">Go to NYU Home</div>
+</div> 	
+<h1><a href="#">Welcome to the Library!</a></h1>
+				<nav id="nav">
+					<ul class="actions">
+					<li>
+						<div class="dropdown">
+							<button class="button big" >Go to...</button> 
+							<div class="dropdown-content">
+    <a href="index2.html" style="color:black; text-align: center;">Entrance</a>
+    <a href="index4.html" style="color:black;">2F Café</a>
+     <a href="index3.html" style="color:black;">Student Lounge</a>
+     <a href="index5.html" style="color:black;">Library</a>
+				</nav>
+			</header>
+			 </div>
+</div>
+	</li>
+				</ul>
+
+
+		<!-- Main -->
+		<script async="" src="//www.google-analytics.com/analytics.js"></script>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/three.min.js"></script>
+
+		<!-- Valiant360 plugin, load after jQuery and Three.js -->
+		<script type="text/javascript" src="jquery.valiant360.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.valiantPhoto').Valiant360();
+			});
+		</script>
+			<section id="main">
+				<!-- <div class="container"> -->
+					<div id="banner2">
+
+					<header class="major">
+						<h2>Library</h2>
+						<p style="color:white;">Like studying or reading in a peaceful environment? Visit the 4th floor, and take a look at the NYU Shanghai Library! The NYU Shanghai library has a wide variety of books that are available for check out. It also offers the service of ordering a book that another NYU campus may have, if required. </p>
+
+						<div class="moving-zone">
+    <div class="popup2">
+        <div class="popup2-content">
+            <div class="popup2-text">
+               <a href="#source_video" style="color:white; text-decoration:none;"> Scroll down to see more!</a><br/>
+            </div>
+        </div>
+    </div>
+</div>
+					</header>
+				</div>
+				<div id="parent1">
+				<a href="index4.html"> <img src="cafe-icon.png" style="width: 100px; height: 100px; padding: 10px; margin-top: 100px; left: 10px; position: absolute;" align="left"></img></a>
+					<div id="popup4" align="left" style="display: none; color:white; margin-top: 200px; position:absolute; left: 21px; width: 100px; padding: 10px;">2F Café</div>
+</div> 	
+<div id="parent2">
+				<a href="index3.html"> <img src="lounge-icon.png" style="width: 100px; height: 100px; padding: 10px; margin-top: 250px; left: 10px; position: absolute;" align="left"></img></a>
+					<div id="popup5" align="left" style="display: none; color:white; margin-top: 340px; position:absolute; left: 23px; width: 100px; padding: 10px;">Lounge</div>
+</div> 	
+
+<div id="parent3">
+				<a href="index5.html"> <img src="library-icon.png" style="width: 100px; height: 100px; padding: 10px; margin-top: 250px; position: absolute; right: 10px;" align="right"></img></a>
+					<div id="popup6" align="right" style="display: none; color:white; position:absolute; right: 25px; width: 100px; padding: 10px; margin-top: 340px;">Library</div>
+</div> 	
+
+<div id="parent4">
+				<a href="index2.html"> <img src="entrance-icon.png" style="width: 100px; height: 100px; padding: 10px; margin-top: 100px; position: absolute; right: 10px;"  align="right"></img></a>
+					<div id="popup7" align="right" style="display: none; color:white; position:absolute; right: 18px; width: 100px; padding: 10px; margin-top: 190px;">Entrance</div>
+</div>
+
+
+					<div class="valiantPhoto" id="source_video" data-photo-src="library.jpg"></div>
+					<!-- <div><button class="button big" style="position: absolute; right: 10px;">Go to live video!</button></div> -->
+					<div class="moving-zone1"><div class="popup2">
+        <div class="popup2-content">
+            <div class="popup2-text">
+               <a href="#Video" onclick= "$('#Video').css('display', 'block');document.getElementById('myAudio').pause();" style="color:white; text-decoration:none;"> Go to Live 360 Video!</a><br/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popup"> Click on the image and move your mouse to rotate, and get a 360 degree view! You can also zoom in and out using your mouse scroll.
+    <div class="close ns-close"></div></div>
+
+    <div id="Video" style="display: none; position: absolute; text-align: center;"><iframe width="1280" height="720" src="https://www.youtube.com/embed/099Sn7r2XBk" frameborder="0" allowfullscreen></iframe> </div>
+
+
+					<script>
+
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+					var moveForce = 30; // max popup movement in pixels
+var rotateForce = 20; // max popup rotation in deg
+
+$(document).mousemove(function(e) {
+    var docX = $(document).width();
+    var docY = $(document).height();
+    
+    var moveX = (e.pageX - docX/2) / (docX/2) * -moveForce;
+    var moveY = (e.pageY - docY/2) / (docY/2) * -moveForce;
+    
+    var rotateY = (e.pageX / docX * rotateForce*2) - rotateForce;
+    var rotateX = -((e.pageY / docY * rotateForce*2) - rotateForce);
+    
+    $('.popup2')
+        .css('left', moveX+'px')
+        .css('top', moveY+'px')
+        .css('transform', 'rotateX('+rotateX+'deg) rotateY('+rotateY+'deg)');
+});
+
+					$('.valiantPhoto').Valiant360({
+        crossOrigin: 'anonymous',   // valid keywords: 'anonymous' or 'use-credentials'
+        clickAndDrag: true,    // use click-and-drag camera controls
+        flatProjection: true,  // map image to appear flat (often more distorted)
+        fov: 100,                // initial field of view
+        fovMin: 3,              // min field of view allowed
+        fovMax: 150,                // max field of view allowed
+        hideControls: true,    // hide player controls
+        lon: 0,                 // initial lon for camera angle
+        lat: 0,                 // initial lat for camera angle
+        loop: "loop",           // video loops by default
+        muted: true,            // video muted by default
+        autoplay: true          // video autoplays by default
+    });
+
+    // play video
+    $('.valiantPhoto').Valiant360('play');
+
+    // pause video
+    $('.valiantPhoto').Valiant360('pause');
+
+    // load new photo file
+    $('.valiantPhoto').Valiant360('loadPhoto', 'library.jpg');
+
+    $(document).ready(function() {
+
+  $(window).scroll(function() {
+      if ($(window).scrollTop() >= ($(document).height() - $(window).height())) {
+        $('.popup').css( "left", "20px" )
+        $('.arrow').hide();
+      }else{
+        $('.popup').css( "left", "-380px" ); 
+        $('.arrow').show();
+    }
+  });
+  
+  $('.close').click(function(){
+    $('.popup').hide();
+  });
+  
+});
+
+     var audio = document.getElementById("myAudio");
+function enableAutoplay() { 
+    audio.autoplay = true;
+    audio.load();
+}
+
+var e = document.getElementById('parent');
+e.onmouseover = function() {
+  document.getElementById('popup3').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('popup3').style.display = 'none';
+}
+
+var e = document.getElementById('parent1');
+e.onmouseover = function() {
+  document.getElementById('popup4').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('popup4').style.display = 'none';
+}
+
+var e = document.getElementById('parent2');
+e.onmouseover = function() {
+  document.getElementById('popup5').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('popup5').style.display = 'none';
+}
+
+var e = document.getElementById('parent3');
+e.onmouseover = function() {
+  document.getElementById('popup6').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('popup6').style.display = 'none';
+}
+
+var e = document.getElementById('parent4');
+e.onmouseover = function() {
+  document.getElementById('popup7').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('popup7').style.display = 'none';
+}
+</script>
+
+
+	</body>
+</html>

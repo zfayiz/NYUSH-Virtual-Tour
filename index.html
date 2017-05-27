@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--
+	Interphase by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>NYU Shanghai Virtual Tour</title>
+		<link rel="stylesheet" type="text/css" href="css/valiant360.css" />
+
+		<!-- <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		 --><!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="#index.html">Welcome</a></h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="http://shanghai.nyu.edu/">Go to NYU Shanghai Website >> </a></li>
+						<!-- <li><a href="#generic.html">Generic</a></li>
+						<li><a href="#elements.html">Elements</a></li> -->
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h2>NYU Shanghai Virtual Tour</h2>
+				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> -->
+				<ul class="actions">
+					<li>
+						<div class="dropdown">
+							<button class="button big">Start</button> 
+							<div class="dropdown-content">
+    <a href="index2.html">Entrance</a>
+     <a href="index3.html">Student Lounge</a>
+     <a href="index4.html">Café</a>
+     <a href="index5.html">Library</a>
+    <!-- <a href="#clip2" onclick="$('#clip2').css('display', 'block'); $('#wrapper').css('display', 'block'); pageScroll(); $('.dropdown1').css('display', 'inline-block');">Student Lounge</a>
+    <a href="#clip3" onclick="$('#clip3').css('display', 'block'); $('#wrapper').css('display', 'block'); pageScroll(); $('.dropdown1').css('display', 'inline-block');">Library</a> -->
+  </div>
+</div>
+						
+					</li>
+				</ul>
+			</section>
+
+<!-- 
+			<script>
+			var speeds = [60];
+var intervals = [2000];
+var current = 0;
+
+function pageScroll() {
+	photoScroll(0);
+}
+
+function photoScroll(current_item)
+{
+	var one_scroll = setInterval(function()
+	{ 
+		scrollBy(0,speeds[current_item]); 
+	}, 100);
+	
+	setTimeout(function()
+	{ 
+		clearInterval(one_scroll);
+		photoScroll(current_item+1);
+	}, intervals[current_item]);
+}
+</script>
+ -->
+<!--  <div class="dropdown1">
+  <button class="dropbtn1">Go to...</button>
+  <div class="dropdown-content">
+    <a href="#clip1" onclick="$('.valiantPhoto').css('display', 'block');">Entrance</a>
+ -->    <!-- <a href="#clip4" onclick="$('#clip4').css('display', 'block');">Café</a> -->
+<!--     <a href="#clip2" onclick="$('.valiantPhoto').css('display', 'block');">Student Lounge</a>
+ -->    <!-- <a href="#clip3" onclick="$('#clip3').css('display', 'block');">Library</a> -->
+<!--   </div>
+</div>
+		<div id="wrapper"> <div class="valiantPhoto" id="source_video" data-video-src="Entrance.mp4"></div>
+ -->		<!-- <div class="valiantPhoto" id="source_video2" data-video-src="Student Lounge.mp4"></div> -->
+<!-- 		<div class="valiantPhoto" id="clip3" data-video-src="Library.mp4"></div>
+		<div class="valiantPhoto" id="clip4" data-video-src="Cafe.mp4"></div></div> -->
+<!-- 		<div class="popup"> Click on the video and move your mouse to rotate, and get a 360 degree view! You can also zoom in and out using your mouse scroll.
+    <div class="close ns-close"></div>
+ </div>
+ -->
+
+	<!-- 	// <script async="" src="//www.google-analytics.com/analytics.js"></script>
+		// <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		// <script type="text/javascript" src="js/three.min.js"></script> -->
+
+		<!-- Valiant360 plugin, load after jQuery and Three.js -->
+		// <!-- <script type="text/javascript" src="jquery.valiant360.min.js"></script> -->
+
+		<!-- <script type="text/javascript">
+			$(document).ready(function() {
+				$('.valiantPhoto').Valiant360();
+			});
+		</script>
+
+		<script>
+
+		
+		  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  // ga('create', 'UA-608903-14', 'flimshaw.net');
+		  // ga('send', 'pageview');
+
+		   // initialize plugin, default options shown
+    $('.valiantPhoto').Valiant360({
+        crossOrigin: 'anonymous',   // valid keywords: 'anonymous' or 'use-credentials'
+        clickAndDrag: true,    // use click-and-drag camera controls
+        flatProjection: true,  // map image to appear flat (often more distorted)
+        fov: 100,                // initial field of view
+        fovMin: 3,              // min field of view allowed
+        fovMax: 150,                // max field of view allowed
+        hideControls: false,    // hide player controls
+        lon: 0,                 // initial lon for camera angle
+        lat: 0,                 // initial lat for camera angle
+        loop: "loop",           // video loops by default
+        muted: true,            // video muted by default
+        autoplay: true          // video autoplays by default
+    });
+
+    // play video
+    $('.valiantPhoto').Valiant360('play');
+
+    // pause video
+    $('.valiantPhoto').Valiant360('pause');
+
+    // load new video file
+    $('.valiantPhoto').Valiant360('loadVideo', 'Entrance.mp4');
+
+   
+$(document).ready(function() {
+
+  $(window).scroll(function() {
+      if ($(window).scrollTop() >= ($(document).height() - $(window).height())) {
+        $('.popup').css( "left", "20px" )
+        $('.arrow').hide();
+      }else{
+        $('.popup').css( "left", "-380px" ); 
+        $('.arrow').show();
+    }
+  });
+  
+  $('.close').click(function(){
+    $('.popup').hide();
+  });
+  
+});
+
+
+
+
+
+		</script>
+
+
+		<!-- One -->
+<!-- 			<section id="one" class="wrapper style1 align-center">
+				<div class="container">
+					<header>
+						<h2>Consectetur adipisicing elit</h2>
+						<p>Lorem ipsum dolor sit amet adipisicing elit. Delectus consequatur sed tempus.</p>
+					</header>
+					<div class="row 200%">
+						<section class="4u 12u$(small)">
+							<i class="icon big rounded fa-clock-o"></i>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quam consectetur quibusdam magni minus aut modi aliquid.</p>
+						</section>
+						<section class="4u 12u$(small)">
+							<i class="icon big rounded fa-comments"></i>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ullam consequatur repellat debitis maxime molestiae.</p>
+						</section>
+						<section class="4u$ 12u$(small)">
+							<i class="icon big rounded fa-user"></i>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eaque eveniet, nesciunt molestias. Ipsam, voluptate vero.</p>
+						</section>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<!-- <section id="two" class="wrapper style2 align-center">
+				<div class="container">
+					<header>
+						<h2>Lorem ipsum dolor sit</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, autem.</p>
+					</header>
+					<div class="row">
+						<section class="feature 6u 12u$(small)">
+							<img class="image fit" src="images/pic01.jpg" alt="" />
+							<h3 class="title">Lorem ipsum dolor</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ipsa voluptate, quae quibusdam. Doloremque similique, reiciendis sit quibusdam aperiam? Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</section>
+						<section class="feature 6u$ 12u$(small)">
+							<img class="image fit" src="images/pic02.jpg" alt="" />
+							<h3 class="title">Esse, fugiat, in</h3>
+							<p>Natus perspiciatis fugit illum porro iusto fuga nam voluptas minima voluptates deserunt, veniam reiciendis harum repellat necessitatibus. Animi, adipisci qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</section>
+						<section class="feature 6u 12u$(small)">
+							<img class="image fit" src="images/pic03.jpg" alt="" />
+							<h3 class="title">Voluptates, repudiandae, dolor</h3>
+							<p>Voluptatibus repellendus tempora, quia! Consequuntur atque, rerum quis, ullam labore officiis ipsa beatae dolore, assumenda eos harum repudiandae, qui ab! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</section>
+						<section class="feature 6u$ 12u$(small)">
+							<img class="image fit" src="images/pic04.jpg" alt="" />
+							<h3 class="title">Eveniet, reiciendis, veniam</h3>
+							<p>Rem nulla molestiae inventore quibusdam repudiandae doloremque eveniet ullam, qui autem possimus saepe laudantium numquam sapiente vel. Repudiandae, nihil tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</section>
+					</div>
+					<footer>
+						<ul class="actions">
+							<li>
+								<a href="#" class="button alt big">Learn More</a>
+							</li>
+						</ul>
+					</footer>
+				</div>
+			</section>
+ -->
+		<!-- Footer -->
+<!-- 			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<section class="4u 6u(medium) 12u$(small)">
+							<h3>Lorem ipsum</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, cumque!</p>
+							<ul class="alt">
+								<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+								<li><a href="#">Quod adipisci perferendis et itaque.</a></li>
+								<li><a href="#">Itaque eveniet ullam, veritatis reiciendis?</a></li>
+								<li><a href="#">Accusantium repellat accusamus a, soluta.</a></li>
+							</ul>
+						</section>
+						<section class="4u 6u$(medium) 12u$(small)">
+							<h3>Nostrum, repellat!</h3>
+							<p>Tenetur voluptate exercitationem eius tempora! Obcaecati suscipit, soluta earum blanditiis.</p>
+							<ul class="alt">
+								<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+								<li><a href="#">Id inventore, qui necessitatibus sunt.</a></li>
+								<li><a href="#">Deleniti eum odit nostrum eveniet.</a></li>
+								<li><a href="#">Illum consectetur quibusdam eos corporis.</a></li>
+							</ul>
+						</section>
+						<section class="4u$ 12u$(medium) 12u$(small)">
+							<h3>Contact Us</h3>
+							<ul class="icons">
+								<li><a href="#" class="icon rounded fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon rounded fa-pinterest"><span class="label">Pinterest</span></a></li>
+								<li><a href="#" class="icon rounded fa-google-plus"><span class="label">Google+</span></a></li>
+								<li><a href="#" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="tabular">
+								<li>
+									<h3>Address</h3>
+									1234 Somewhere Road<br>
+									Nashville, TN 00000
+								</li>
+								<li>
+									<h3>Mail</h3>
+									<a href="#">someone@untitled.tld</a>
+								</li>
+								<li>
+									<h3>Phone</h3>
+									(000) 000-0000
+								</li>
+							</ul>
+						</section>
+					</div>
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+ --> 
+
+
+
+
+	</body>
+</html>
